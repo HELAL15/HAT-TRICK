@@ -1,0 +1,107 @@
+footer {
+
+  background-color: $footer;
+  padding: 3rem 0;
+
+
+  .footer-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .d-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .d-subs {
+    display: flex;
+    justify-content: end;
+  }
+
+
+  @media($s_mob) {
+
+    .footer-logo {
+      margin: auto;
+    }
+
+    .d-links {
+      order: 3;
+    }
+
+    .d-subs {
+      display: block;
+      order: 2;
+    }
+  }
+
+  .subscribtion-form {
+    background-color: $white;
+    border-radius: $brad;
+    border: 1px solid $white;
+    padding: 0.2rem;
+
+    &:focus {
+      border-color: $main;
+    }
+
+    @include h_center($gap: 1rem);
+
+    .form-control {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+
+      &::-webkit-input-placeholder {
+        color: black;
+      }
+
+      &::-moz-placeholder {
+        color: black;
+      }
+
+      &:-ms-input-placeholder {
+        color: black;
+      }
+
+      &::-ms-input-placeholder {
+        color: black;
+      }
+
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    .btn {
+      padding: 0.40rem 1.5rem;
+    }
+  }
+
+
+
+
+  /*copy rights*/
+}
+
+.rights {
+  padding: .5rem 0 1rem 0;
+  background-color: $footer ;
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a:first-child {
+      &::after {
+        content: '|';
+        margin: 0 1rem 0 0;
+        opacity: .6;
+
+      }
+    }
+
+  }
+
+}

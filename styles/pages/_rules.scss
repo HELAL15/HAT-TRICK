@@ -1,0 +1,26 @@
+.rules {
+  padding: 3rem 0 0 0;
+
+  ul {
+    -webkit-margin-start: 2rem;
+    margin-inline-start: 2rem;
+    margin-top: 3rem;
+
+    li {
+      position: relative;
+      margin-bottom: 1.5rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset-inline-start: -3.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $secondary;
+        border-radius: 50%;
+      }
+    }
+  }
+}
