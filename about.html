@@ -1,1 +1,318 @@
-on progress come soon
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAT-TRICK</title>
+
+  <link rel="icon" href="images/fav.svg">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Bootstrap link  -->
+  <!-- if lang == ar -->
+  <link rel="stylesheet" href="styles/plugin/bootstrap.rtl.min.css">
+
+  <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
+
+  <!-- animate link  -->
+  <link rel="stylesheet" href="styles/plugin/animate.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/plugin/swiper.min.css">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+
+  <!-- ========= scroll to top btn =========== -->
+
+  <button class="btn scrollTop secondary-btn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+
+  <!------------- navbar -------------->
+
+  <nav class="navbar  navbar-expand-lg" id="nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="">
+      </a>
+      <div class="m-0 d-flex align-items-center">
+        <button class="navbar-toggler" id="nav-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="navbar-collapse">
+        <div class="nav-header-mobile w-100 justify-content-between align-items-center mt-3 px-4">
+          <div class="img">
+            <img src="images/logo.png" alt="">
+          </div>
+          <i class="fas fa-close" id="close"></i>
+        </div>
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">من نحن ؟</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">المقالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="join.html">كيف أنضم؟</a>
+          </li>
+        </ul>
+        <div class="download-links">
+          <div class="d-flex gap-2">
+            <a href="#" class="btn secondary-btn">
+              <div class="text">
+                <p>download on the</p>
+                <p>apple store</p>
+              </div>
+              <img src="images/Apple.svg" alt="">
+            </a>
+            <a href=" #" class="btn main-btn">
+              <div class="text">
+                <p>Get it on</p>
+                <p>Google Play</p>
+              </div>
+              <img src="images/google.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <header style="background: url('./images/header.png');">
+    <div class="overlay"></div>
+    <div class="container d-flex justify-content-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item active" aria-current="page">من نحن ؟</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="subtraction position-absolute bottom-0 z-3 w-100">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1568.483 304.13">
+        <path id="Subtraction_1" data-name="Subtraction 1"
+          d="M581.907,1001.979c-22.208,0-44.253-.786-65.525-2.335-20.576-1.5-40.983-3.753-60.655-6.7-19-2.846-37.824-6.414-55.957-10.606-17.478-4.041-34.782-8.769-51.432-14.053-16.015-5.083-31.854-10.816-47.077-17.041-14.606-5.972-29.038-12.557-42.9-19.57-13.256-6.71-26.339-13.99-38.885-21.64-11.962-7.294-23.753-15.117-35.046-23.251A536.478,536.478,0,0,1,79.2,786.845a530.625,530.625,0,0,1-34.05-47.7C36.58,725.6,28.672,711.7,21.647,697.849,45.843,738.941,92.51,798.312,177.439,847.8c101.963,59.411,232.838,89.536,388.989,89.536,130.074,0,301.374-21.063,509.142-62.6,84.179-16.83,174.952-37.165,269.8-60.44,78.792-19.335,161.143-40.878,244.764-64.031-32.631,13.762-68.99,28.077-108.065,42.55-39.113,14.487-80.843,29.092-124.03,43.41-43.85,14.538-89.128,28.756-134.578,42.257-46.741,13.885-93.746,27.037-139.71,39.09-47.74,12.519-94.649,23.927-139.426,33.909C897.5,961.914,852.506,970.9,810.595,978.191,719.828,993.975,642.886,1001.979,581.907,1001.979Z"
+          transform="translate(-21.647 -697.849)" fill="#01d681" />
+      </svg>
+
+    </div>
+  </header>
+
+  <!-- ========== about section ========= -->
+  <section class="about">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-6">
+          <div class="content">
+            <h4 class="sec-title">من نحن؟</h4>
+            <p class="my-4">نحن فريق متخصص في تطوير تطبيق كرة القدم، نسعى جاهدين لتقديم تجربة مثالية لعشاق اللعبة، نقدم
+              محتوى شامل وموثوق يجمع بين أحدث الأخبار والتحاليل والإحصائيات، لنجعل تجربة متابعة الكرة أكثر متعة وسهولة
+              للجميع</p>
+            <p class="my-4">رسالتنا هي تقديم تجربة فريدة وشاملة لعشاق اللعبة. نحن نجمع بين أحدث الأخبار والتحاليل
+              والإحصائيات في مكان واحد، لنضمن توفير محتوى ممتع ومفيد يلبي احتياجات جميع محبي كرة القدم</p>
+          </div>
+        </div>
+        <div class="col-md-6 flex-center">
+          <div class="img position-relative">
+            <div class="ribbon"></div>
+            <div class="ribbon-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+                <path id="Path_1958" data-name="Path 1958" d="M0-72.6l704,196.51V505.541L0,636.547Z"
+                  transform="translate(0 72.597)" fill="#01d681" />
+              </svg>
+            </div>
+            <div class="video position-relative">
+              <div class="overlay" id="overlay">
+                <button class="btn play float-icon" id="play">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="btn pause float-icon" id="pause">
+                  <i class="fas fa-pause"></i>
+                </button>
+              </div>
+              <video src="images/vid.mp4" id="video"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== why-us section ========= -->
+  <section class="why-us">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-5 flex-center">
+          <div class="img position-relative">
+            <div class="ribbon right"></div>
+            <div class="ribbon-slide right">
+              <!-- ===== different from default ===== -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+                <path id="Path_1959" data-name="Path 1959" d="M704-72.6,0,123.913V505.541L704,636.547Z"
+                  transform="translate(0 72.597)" fill="#01d681" />
+              </svg>
+            </div>
+            <img src="images/join.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="content">
+            <h4 class="sec-title">لماذا نحن ؟</h4>
+            <p class="my-4">نحن فريق متخصص في تطوير تطبيق كرة القدم، نسعى جاهدين لتقديم تجربة مثالية لعشاق اللعبة، نقدم
+              محتوى شامل وموثوق يجمع بين أحدث الأخبار والتحاليل والإحصائيات، لنجعل تجربة متابعة الكرة أكثر متعة وسهولة
+              للجميع</p>
+            <p class="my-4">رسالتنا هي تقديم تجربة فريدة وشاملة لعشاق اللعبة. نحن نجمع بين أحدث الأخبار والتحاليل
+              والإحصائيات في مكان واحد، لنضمن توفير محتوى ممتع ومفيد يلبي احتياجات جميع محبي كرة القدم</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== services ========== -->
+  <section class="services">
+    <div class="container">
+      <h4 class="sec-title text-center">نحن نوفر أنواع مختلفة من الخدمات لك</h4>
+      <div class="row gy-4 align-items-stretch">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img">
+              <div class="overlay" style="background: url('./images/card-back.png');"></div>
+              <img src="images/mobile.png" alt="">
+            </div>
+            <div class="card-body">
+              <h6 class="title">واجهة المستخدم الفريدة للتطبيق</h6>
+              <p>إنها حقيقة ثابتة منذ زمن طويل أن المحتوى المقروء للصفحة سوف يصرف انتباه القارئ عند النظر إلى تخطيطها.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img">
+              <div class="overlay" style="background: url('./images/card-back.png');"></div>
+              <img src="images/Dashboard.png" alt="">
+            </div>
+            <div class="card-body">
+              <h6 class="title">لوحة تحكم مميزة</h6>
+              <p>إنها حقيقة ثابتة منذ زمن طويل أن المحتوى المقروء للصفحة سوف يصرف انتباه القارئ عند النظر إلى تخطيطها.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img">
+              <div class="overlay" style="background: url('./images/card-back.png');"></div>
+              <img src="images/web-app.png" alt="">
+            </div>
+            <div class="card-body">
+              <h6 class="title">تطبيق مناسب مع جميع الجوالات</h6>
+              <p>إنها حقيقة ثابتة منذ زمن طويل أن المحتوى المقروء للصفحة سوف يصرف انتباه القارئ عند النظر إلى تخطيطها.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between align-items-center gy-5">
+        <div class="col-md-4">
+          <a href="index.html">
+            <div class="img footer-logo">
+              <img src="images/logo.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 d-links">
+          <div class="download-links">
+            <h4 class="mb-4 text-center">يمكنك تحميل التطبيق الآن من خلال</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#" class="btn secondary-btn">
+                <div class="text">
+                  <p>download on the</p>
+                  <p>apple store</p>
+                </div>
+                <img src="images/Apple.svg" alt="">
+              </a>
+              <a href=" #" class="btn main-btn">
+                <div class="text">
+                  <p>Get it on</p>
+                  <p>Google Play</p>
+                </div>
+                <img src="images/google.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-subs">
+          <div class=" mail-subscribe">
+            <h4 class="mb-4 text-center">الاشتراك في النشرة البريدية</h4>
+            <form action="" class="form subscribtion-form">
+              <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+              <button type="submit" class="btn secondary-btn">ارسال</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="rights">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <a class="smartV-link" href="https://smartvision4p.com/" target="_blank">جميع الحقوق محفوظة لموقع سمارت فيجن
+          للبرمجيات</a>
+        <div class="links d-flex">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="rules.html">الشروط والأحكام</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- jQuery script -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- wow script -->
+  <script src="js/wow.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

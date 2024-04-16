@@ -13,16 +13,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-
   <!-- Bootstrap link  -->
   <!-- if lang == ar -->
   <link rel="stylesheet" href="styles/plugin/bootstrap.rtl.min.css">
-
+  <!-- bootstrap icon -->
   <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
-
   <!-- animate link  -->
   <link rel="stylesheet" href="styles/plugin/animate.css" />
-
+  <!-- swiper link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/plugin/swiper.min.css">
   <!-- custom css file link  -->
@@ -32,18 +30,36 @@
 <body>
 
 
+  <!-- ========= scroll to top btn =========== -->
+
+  <button class="btn scrollTop secondary-btn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+
+
+
+
+
   <!------------- navbar -------------->
 
-  <nav class="navbar navbar-expand-lg " id="nav">
+  <nav class="navbar  navbar-expand-lg" id="nav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="m-0 d-flex align-items-center">
+        <button class="navbar-toggler" id="nav-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="navbar-collapse">
+        <div class="nav-header-mobile w-100 justify-content-between align-items-center mt-3 px-4">
+          <div class="img">
+            <img src="images/logo.png" alt="">
+          </div>
+          <i class="fas fa-close" id="close"></i>
+        </div>
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
@@ -83,8 +99,7 @@
     </div>
   </nav>
 
-
-  <header class="header-home">
+  <header class="header-home" style="background: url('./images/header.png');">
     <div class="overlay"></div>
     <div class="container">
       <div class="row justify-content-between position-relative z-3">
@@ -93,9 +108,9 @@
             <p class="content-first">اكتشف عالم كرة القدم بأسلوب جديد مع تطبيق</p>
             <h1 class="name">هاتريك</h1>
             <p class="content-seconed">الذي يقدم لك كل ما تحتاجه لمتابعة الأخبار والمباريات في آن واحد</p>
-            <div class="links">
-              <a href="#" class="btn main-btn">انضم لنا</a>
-              <a href="#" class="btn"><span>معرفة المزيد</span> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="links gap-3">
+              <a href="join.html" class="btn main-btn">انضم لنا</a>
+              <a href="about.html" class="btn"><span>معرفة المزيد</span> <i class="fa-solid fa-arrow-left"></i></a>
 
             </div>
           </div>
@@ -165,66 +180,111 @@
     </div>
   </section>
 
-
   <!-- ========== why-us section ========= -->
-
   <section class="why-us">
     <div class="container">
       <div class="row gy-4 align-items-center">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="content">
             <h4 class="sec-title">لماذا نحن ؟</h4>
-            <p class="my-4">انضم إلى تطبيقنا الآن للاستمتاع بكل ما يقدمه من محتوى مثير وموثوق به في عالم كرة القدم.
-              ببساطة، قم بتنزيل
-              التطبيق وانضم إلى مجتمعنا الرائع لتبقى على اطلاع دائم بكل جديد في عالم الساحرة المستديرة هل ترغب في
-              الاستمتاع بكل جوانب عالم كرة القدم في مكان واحد؟ انضم إلينا الآن بسهولة عبر تحميل التطبيق، حيث ستجد أحدث
-              الأخبار، والتحاليل الفنية، والإحصائيات، والعديد من المزايا الأخرى التي ستثري تجربتك كمحب لكرة القدم. لا
-              تفوت الفرصة، انضم إلينا اليوم</p>
-            <p class="my-4">انضم إلى تطبيقنا الآن للاستمتاع بكل ما يقدمه من محتوى مثير وموثوق به في عالم كرة القدم.
-              ببساطة، قم بتنزيل
-              التطبيق وانضم إلى مجتمعنا الرائع لتبقى على اطلاع دائم بكل جديد في عالم الساحرة المستديرة هل ترغب في
-              الاستمتاع بكل جوانب عالم كرة القدم في مكان واحد؟ انضم إلينا الآن بسهولة عبر تحميل التطبيق، حيث ستجد أحدث
-              الأخبار، والتحاليل الفنية، والإحصائيات، والعديد من المزايا الأخرى التي ستثري تجربتك كمحب لكرة القدم. لا
-              تفوت الفرصة، انضم إلينا اليوم</p>
-            <a href=" #" class="btn main-btn">المزيد</a>
+            <p class="my-4">نحن فريق متخصص في تطوير تطبيق كرة القدم، نسعى جاهدين لتقديم تجربة مثالية لعشاق اللعبة، نقدم
+              محتوى شامل وموثوق يجمع بين أحدث الأخبار والتحاليل والإحصائيات، لنجعل تجربة متابعة الكرة أكثر متعة وسهولة
+              للجميع</p>
+            <p class="my-4">رسالتنا هي تقديم تجربة فريدة وشاملة لعشاق اللعبة. نحن نجمع بين أحدث الأخبار والتحاليل
+              والإحصائيات في مكان واحد، لنضمن توفير محتوى ممتع ومفيد يلبي احتياجات جميع محبي كرة القدم</p>
+            <a href="about.html" class="btn main-btn">المزيد</a>
           </div>
         </div>
-        <div class="col-md-5 flex-center">
-          <div class="img">
-            <img src="images/join.png" alt="">
+        <div class="col-md-6 flex-center">
+          <div class="img position-relative">
+            <div class="ribbon"></div>
+            <div class="ribbon-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+                <path id="Path_1958" data-name="Path 1958" d="M0-72.6l704,196.51V505.541L0,636.547Z"
+                  transform="translate(0 72.597)" fill="#01d681" />
+              </svg>
+            </div>
+            <img src="images/screen3.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ screens ============ -->
+  <section class="screens py-4">
+    <div class="container position-relative">
+      <h4 class="sec-title text-center">الشاشات</h4>
+      <div class="swiper mt-5 position-relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/screen1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/screen2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/screen3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/screen4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/screen2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/screen3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="ribbon right"></div>
+      <div class="ribbon-slide right ">
+        <!-- ===== different from default ===== -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+          <path id="Path_1959" data-name="Path 1959" d="M704-72.6,0,123.913V505.541L704,636.547Z"
+            transform="translate(0 72.597)" fill="#01d681" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ========== about section ========= -->
-
   <section class="about">
     <div class="container">
       <div class="row gy-4 align-items-center">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="content">
             <h4 class="sec-title">من نحن؟</h4>
-            <p class="my-4">انضم إلى تطبيقنا الآن للاستمتاع بكل ما يقدمه من محتوى مثير وموثوق به في عالم كرة القدم.
-              ببساطة، قم بتنزيل
-              التطبيق وانضم إلى مجتمعنا الرائع لتبقى على اطلاع دائم بكل جديد في عالم الساحرة المستديرة هل ترغب في
-              الاستمتاع بكل جوانب عالم كرة القدم في مكان واحد؟ انضم إلينا الآن بسهولة عبر تحميل التطبيق، حيث ستجد أحدث
-              الأخبار، والتحاليل الفنية، والإحصائيات، والعديد من المزايا الأخرى التي ستثري تجربتك كمحب لكرة القدم. لا
-              تفوت الفرصة، انضم إلينا اليوم</p>
-            <p class="my-4">انضم إلى تطبيقنا الآن للاستمتاع بكل ما يقدمه من محتوى مثير وموثوق به في عالم كرة القدم.
-              ببساطة، قم بتنزيل
-              التطبيق وانضم إلى مجتمعنا الرائع لتبقى على اطلاع دائم بكل جديد في عالم الساحرة المستديرة هل ترغب في
-              الاستمتاع بكل جوانب عالم كرة القدم في مكان واحد؟ انضم إلينا الآن بسهولة عبر تحميل التطبيق، حيث ستجد أحدث
-              الأخبار، والتحاليل الفنية، والإحصائيات، والعديد من المزايا الأخرى التي ستثري تجربتك كمحب لكرة القدم. لا
-              تفوت الفرصة، انضم إلينا اليوم</p>
-            <a href=" #" class="btn main-btn">المزيد</a>
+            <p class="my-4">نحن فريق متخصص في تطوير تطبيق كرة القدم، نسعى جاهدين لتقديم تجربة مثالية لعشاق اللعبة، نقدم
+              محتوى شامل وموثوق يجمع بين أحدث الأخبار والتحاليل والإحصائيات، لنجعل تجربة متابعة الكرة أكثر متعة وسهولة
+              للجميع</p>
+            <p class="my-4">رسالتنا هي تقديم تجربة فريدة وشاملة لعشاق اللعبة. نحن نجمع بين أحدث الأخبار والتحاليل
+              والإحصائيات في مكان واحد، لنضمن توفير محتوى ممتع ومفيد يلبي احتياجات جميع محبي كرة القدم</p>
+            <a href="about.html" class="btn main-btn">المزيد</a>
           </div>
         </div>
-        <div class="col-md-5 flex-center">
-          <div class="img">
-            <img src="images/join.png" alt="">
+        <div class="col-md-6 flex-center">
+          <div class="img position-relative">
+            <div class="ribbon"></div>
+            <div class="ribbon-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+                <path id="Path_1958" data-name="Path 1958" d="M0-72.6l704,196.51V505.541L0,636.547Z"
+                  transform="translate(0 72.597)" fill="#01d681" />
+              </svg>
+            </div>
+            <div class="video position-relative">
+              <div class="overlay" id="overlay">
+                <button class="btn play float-icon" id="play">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="btn pause float-icon" id="pause">
+                  <i class="fas fa-pause"></i>
+                </button>
+              </div>
+              <video src="images/vid.mp4" id="video"></video>
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +299,7 @@
         <div class="col-md-4">
           <a class="card" href="single-article.html">
             <div class="card-img">
-              <img src="images/articles.PNG" alt="">
+              <img src="images/Dashboard.png" alt="">
             </div>
             <div class="card-body">
               <h5 class="title">هو ببساطة نص شكلي</h5>
@@ -295,13 +355,11 @@
   </section>
 
 
-
   <!-- ========== join section ========= -->
-
   <section class="join">
     <div class="container">
       <div class="row gy-4 align-items-center">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="content">
             <h4 class="sec-title">كيف انضم</h4>
             <p class="my-4">انضم إلى تطبيقنا الآن للاستمتاع بكل ما يقدمه من محتوى مثير وموثوق به في عالم كرة القدم.
@@ -330,15 +388,21 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 flex-center">
-          <div class="img">
+        <div class="col-md-6 flex-center">
+          <div class="img position-relative">
+            <div class="ribbon"></div>
+            <div class="ribbon-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.003 709.144">
+                <path id="Path_1958" data-name="Path 1958" d="M0-72.6l704,196.51V505.541L0,636.547Z"
+                  transform="translate(0 72.597)" fill="#01d681" />
+              </svg>
+            </div>
             <img src="images/join.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 
   <!-- footer  -->
@@ -390,7 +454,8 @@
   <div class="rights">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
-        <a href="#">جميع الحقوق محفوظة لموقع سمارت فيجن للبرمجيات</a>
+        <a class="smartV-link" href="https://smartvision4p.com/" target="_blank">جميع الحقوق محفوظة لموقع سمارت فيجن
+          للبرمجيات</a>
         <div class="links d-flex">
           <a href="privacy.html">سياسة الخصوصية</a>
           <a href="rules.html">الشروط والأحكام</a>
@@ -402,17 +467,15 @@
 
 
 
-
   <!-- jQuery script -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <!-- bootstrap script -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- wow script -->
   <script src="js/wow.min.js"></script>
+  <!-- swiper script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-
-
   <!-- custom js file link  -->
   <script src="js/script.js"></script>
 

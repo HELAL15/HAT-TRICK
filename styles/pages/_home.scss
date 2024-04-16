@@ -7,8 +7,8 @@
     padding: 1.5rem .5rem;
 
     .card-img {
-      height: 180px;
-      width: 180px;
+      height: 170px;
+      width: 170px;
       margin: auto;
       position: relative;
       display: flex;
@@ -65,9 +65,25 @@
         border-radius: $brad;
         position: relative !important;
         transition: all .3s;
+        height: 350px;
+
+        @media(max-width:1024px) {
+          height: 270px;
+        }
+
+        @media($s_med) {
+          height: 250px;
+        }
+
+        @media($s_mob) {
+          height: 200px;
+        }
+
 
         img {
           transition: all .3s;
+          -o-object-fit: cover;
+          object-fit: cover;
         }
       }
 
@@ -118,5 +134,138 @@
 .join {
   .img {
     width: 50%;
+    height: 100%;
   }
+}
+
+
+.about {
+  .flex-center {
+    justify-content: flex-start !important;
+  }
+
+  .ribbon {
+    height: 200px;
+    width: 200px;
+    inset-inline-end: -96%;
+    outline: 4rem solid rgba(255, 255, 255, 0.1803921569);
+  }
+
+  .ribbon-slide {
+    left: -130%;
+  }
+
+  .video {
+    width: 600px;
+    height: 400px;
+
+    @media(max-width:1440px) {
+      width: 500px;
+      height: 300px;
+    }
+
+    @media(max-width:1024px) {
+      width: 400px;
+      height: 250px;
+    }
+
+    @media($s_med) {
+      width: 300px;
+      height: 250px;
+    }
+
+    @media($s_mob) {
+      width: 300px;
+      height: 200px;
+    }
+
+    border-radius: $brad;
+    overflow: hidden;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #00000073;
+      z-index: 3;
+      @extend %flex_center;
+
+      transition: .3s;
+
+      &.active {
+        opacity: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .btn {
+        padding: 0;
+        @include size($size: 50px);
+        font-size: 2rem;
+
+      }
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+
+
+// ==== screens section =====
+
+.screens {
+  .ribbon {
+    &.right {
+      height: 200px;
+      width: 200px;
+      outline: 3rem solid rgba(255, 255, 255, 0.1803921569);
+      inset-inline-start: -6%;
+      inset-inline-end: unset;
+      transform: translate(-6%, 50%);
+    }
+  }
+
+  .ribbon-slide {
+    &.right {
+      left: unset;
+      right: -45%;
+
+      @media($s_mob) {
+        right: -90%;
+      }
+    }
+  }
+
+
+  .swiper {
+    padding: 0 0 6rem 0;
+
+    .swiper-pagination {
+      bottom: 3rem;
+
+      .swiper-pagination-bullet {
+        background-color: $secondary;
+        opacity: .4;
+        @include size($size: 12px);
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $secondary;
+        opacity: 1;
+      }
+    }
+
+
+  }
+
 }

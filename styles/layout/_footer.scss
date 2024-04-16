@@ -86,7 +86,21 @@ footer {
 
 .rights {
   padding: .5rem 0 1rem 0;
+
+  @media($s_mob) {
+    .smartV-link {
+      font-size: 14px;
+      margin-bottom: .5rem;
+    }
+  }
+
   background-color: $footer ;
+
+  @media($s_mob) {
+    .d-flex {
+      justify-content: center !important;
+    }
+  }
 
   .links {
     display: flex;

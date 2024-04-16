@@ -32,18 +32,32 @@
 <body>
 
 
+  <!-- ========= scroll to top btn =========== -->
+
+  <button class="btn scrollTop secondary-btn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+
   <!------------- navbar -------------->
 
-  <nav class="navbar navbar-expand-lg " id="nav">
+  <nav class="navbar  navbar-expand-lg" id="nav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="m-0 d-flex align-items-center">
+        <button class="navbar-toggler" id="nav-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="navbar-collapse">
+        <div class="nav-header-mobile w-100 justify-content-between align-items-center mt-3 px-4">
+          <div class="img">
+            <img src="images/logo.png" alt="">
+          </div>
+          <i class="fas fa-close" id="close"></i>
+        </div>
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">الرئيسية</a>
@@ -84,7 +98,7 @@
   </nav>
 
 
-  <header class="">
+  <header style="background: url('./images/header.png');">
     <div class="overlay"></div>
     <div class="container d-flex justify-content-center">
       <nav aria-label="breadcrumb">
@@ -190,7 +204,8 @@
   <div class="rights">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
-        <a href="#">جميع الحقوق محفوظة لموقع سمارت فيجن للبرمجيات</a>
+        <a class="smartV-link" href="https://smartvision4p.com/" target="_blank">جميع الحقوق محفوظة لموقع سمارت فيجن
+          للبرمجيات</a>
         <div class="links d-flex">
           <a href="privacy.html">سياسة الخصوصية</a>
           <a href="rules.html">الشروط والأحكام</a>

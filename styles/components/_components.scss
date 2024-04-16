@@ -48,7 +48,7 @@
     z-index: $ind;
 }
 
-@mixin h_center ($gap: 20px) {
+@mixin h_center ($gap: 4px) {
     display: flex;
     align-items: center;
     gap: $gap;

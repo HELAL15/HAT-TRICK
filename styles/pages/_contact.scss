@@ -1,0 +1,110 @@
+.contact {
+  margin-top: 5rem;
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media($s_med) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media($s_mob) {
+      justify-content: start;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .icon {
+        font-size: 1.1rem;
+        background-color: $footer;
+        border-radius: 50%;
+        @include size($size: 55px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 3px 6px #00000073;
+
+
+        i {
+          color: $secondary;
+        }
+      }
+
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        border-radius: 50%;
+        @include size($size: 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        border: 1px solid $white;
+        opacity: .7;
+        transition: .3s;
+
+        &:hover {
+          opacity: 1;
+          background-color: $secondary ;
+          border-color: $secondary;
+        }
+      }
+    }
+  }
+
+  .form {
+    background-color: $footer;
+    border-radius: $brad;
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+
+    @media($s_mob) {
+      padding: 2rem 1rem;
+    }
+
+    .btn {
+      color: $main;
+      font-weight: bold;
+    }
+
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background-color: $secondary;
+      z-index: 1;
+      border-radius: $brad;
+
+      @media($s_mob) {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      right: 0;
+      top: 0;
+    }
+
+    &::after {
+      left: 0;
+      bottom: 0;
+    }
+
+
+  }
+}

@@ -1,6 +1,5 @@
 header {
   // margin-top: 150px;
-  background: url('/images/header.png');
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -46,6 +45,10 @@ header.header-home {
 
   .header-content {
     margin-top: 4rem;
+
+    @media($s_mob) {
+      margin-top: 2rem;
+    }
 
     .content-first,
     .content-seconed {
