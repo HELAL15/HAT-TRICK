@@ -223,6 +223,15 @@ section {
   margin: 2rem 0 5rem 0;
 }
 
+.styled:hover {
+  background-color: #01D681;
+  color: #201943;
+}
+.styled:focus {
+  background-color: #01D681;
+  color: #201943;
+}
+
 .download-links {
   text-align: center;
 }
@@ -643,6 +652,9 @@ footer .subscribtion-form {
   align-items: center;
   gap: 1rem;
 }
+footer .subscribtion-form .form-control {
+  color: #201943;
+}
 footer .subscribtion-form:focus {
   border-color: #201943;
 }
@@ -1038,6 +1050,9 @@ footer .subscribtion-form .btn {
 .single-article .img img {
   -o-object-fit: cover;
   object-fit: cover;
+}
+.single-article .title {
+  color: #01D681;
 }
 .single-article .date i,
 .single-article .date span {

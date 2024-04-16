@@ -251,6 +251,8 @@ html[dir=ltr] {
   }
 }
 
+
+
 .main-btn {
   color: $main ;
   background-color: $white;
@@ -263,6 +265,8 @@ html[dir=ltr] {
 
   }
 
+
+
   &:active {
     background-color: $white !important;
     color: $main !important;
@@ -273,6 +277,18 @@ section {
   margin: 2rem 0 5rem 0;
 }
 
+.styled {
+  &:hover {
+    background-color: $secondary;
+    color: $main;
+  }
+
+  &:focus {
+    background-color: $secondary;
+    color: $main;
+
+  }
+}
 
 .download-links {
   text-align: center;

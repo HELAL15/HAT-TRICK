@@ -42,6 +42,10 @@ footer {
     border: 1px solid $white;
     padding: 0.2rem;
 
+    .form-control {
+      color: $main;
+    }
+
     &:focus {
       border-color: $main;
     }
