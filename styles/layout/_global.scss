@@ -358,9 +358,26 @@ section {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  @include size($size: 40px);
   @extend %flex_center;
   padding: 0;
+  width: 100px;
+  color: $main !important;
+  background-color: transparent;
+  border: none;
+
+
+
+  .list {
+    .option {
+      color: $main !important;
+
+      &.selected {
+        color: $secondary !important;
+      }
+    }
+
+
+  }
 
   @media($s_med) {
     display: none;

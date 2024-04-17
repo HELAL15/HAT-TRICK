@@ -281,11 +281,17 @@ section {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  width: 40px;
-  height: 40px;
-  -o-object-fit: contain;
-  object-fit: contain;
   padding: 0;
+  width: 100px;
+  color: #201943 !important;
+  background-color: transparent;
+  border: none;
+}
+.lang .list .option {
+  color: #201943 !important;
+}
+.lang .list .option.selected {
+  color: #01D681 !important;
 }
 @media (max-width : 991.8px) {
   .lang {
