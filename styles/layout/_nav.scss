@@ -40,6 +40,10 @@
 
         @media(max-width:1024px) {
             @include h_center($gap: 4px);
+
+            .nav-link {
+                padding-left: 0;
+            }
         }
 
         @media($s_mob) {
