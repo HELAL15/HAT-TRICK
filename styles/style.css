@@ -299,13 +299,13 @@ section {
   }
 }
 .lang.mobile-lang {
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: none;
 }
 @media (max-width : 991.8px) {
   .lang.mobile-lang {
     display: flex;
-    margin-inline-end: 4rem;
+    margin-inline-end: 0rem;
   }
 }
 
