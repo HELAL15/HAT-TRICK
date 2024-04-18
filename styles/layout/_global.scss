@@ -161,8 +161,10 @@ span {
 .toast {
   color: $main !important;
 
-  i {
+  .toast-message {
     color: $main !important;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
 }
 

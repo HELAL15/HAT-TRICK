@@ -144,8 +144,10 @@ span {
 .toast {
   color: #201943 !important;
 }
-.toast i {
+.toast .toast-message {
   color: #201943 !important;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .breadcrumb {
