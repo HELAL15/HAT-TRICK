@@ -141,6 +141,13 @@ span {
   margin-bottom: 0;
 }
 
+.toast {
+  color: #201943 !important;
+}
+.toast i {
+  color: #201943 !important;
+}
+
 .breadcrumb {
   position: relative;
   z-index: 5;
@@ -278,7 +285,6 @@ section {
 
 .lang {
   margin-inline-end: 1rem;
-  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0;
@@ -299,7 +305,6 @@ section {
   }
 }
 .lang.mobile-lang {
-  font-size: 1rem;
   display: none;
 }
 @media (max-width : 991.8px) {
@@ -530,6 +535,16 @@ section {
   font-weight: 400;
   color: #fff;
 }
+@media (max-width: 1024px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width : 991.8px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
 .navbar .navbar-nav .nav-item .nav-link:hover:after {
   content: "";
   position: absolute;
@@ -547,6 +562,16 @@ section {
   color: #fff;
   font-weight: bold;
   font-size: 1.1rem;
+}
+@media (max-width: 1024px) {
+  .navbar .navbar-nav .nav-item .nav-link.active {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width : 991.8px) {
+  .navbar .navbar-nav .nav-item .nav-link.active {
+    font-size: 1rem;
+  }
 }
 .navbar .navbar-nav .nav-item .nav-link.active:after {
   content: "";
@@ -894,6 +919,13 @@ footer .subscribtion-form .btn {
   width: 200px;
   inset-inline-end: -96%;
   outline: 4rem solid rgba(255, 255, 255, 0.1803921569);
+}
+@media (max-width: 1024px) {
+  .about .ribbon {
+    height: 100px;
+    width: 100px;
+    outline-width: 3rem;
+  }
 }
 .about .ribbon-slide {
   left: -130%;

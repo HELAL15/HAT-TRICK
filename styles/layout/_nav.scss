@@ -65,6 +65,14 @@
                 font-weight: 400;
                 color: $white;
 
+                @media(max-width:1024px) {
+                    font-size: .8rem;
+                }
+
+                @media($s_med) {
+                    font-size: 1rem;
+                }
+
                 &:hover:after {
                     content: '';
                     position: absolute;
@@ -84,6 +92,16 @@
                     color: $white;
                     font-weight: bold;
                     font-size: 1.1rem;
+
+                    @media(max-width:1024px) {
+                        font-size: .8rem;
+                    }
+
+                    @media($s_med) {
+                        font-size: 1rem;
+                    }
+
+
 
                     &:after {
                         content: '';

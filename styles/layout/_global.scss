@@ -154,6 +154,20 @@ span {
   margin-bottom: 0;
 }
 
+
+
+
+
+.toast {
+  color: $main !important;
+
+  i {
+    color: $main !important;
+  }
+}
+
+
+
 .breadcrumb {
   position: relative;
   z-index: 5;
@@ -355,7 +369,6 @@ section {
 .lang {
   -webkit-margin-end: 1rem;
   margin-inline-end: 1rem;
-  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   @extend %flex_center;
@@ -384,7 +397,6 @@ section {
   }
 
   &.mobile-lang {
-    font-size: 1rem;
     display: none;
 
     @media($s_med) {
